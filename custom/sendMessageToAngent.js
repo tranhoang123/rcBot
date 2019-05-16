@@ -13,7 +13,7 @@ var sendMessage = (message) => {
             let angent = online.filter(e => {
                     return e.username !== "mybot" && e.username !== "tranhoang";
                 })
-                //console.log(angent);
+            console.log(angent);
             post({ angent: angent, data: data, message: message });
         })
         .catch(e => console.log(e));
