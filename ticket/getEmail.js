@@ -5,7 +5,7 @@ var botdb = require('./../custom/botDb');
 var getEmail = (token) => {
   return new Promise(function (resolve, reject) {
     request.get({
-      url: "http://localhost:3001/api/v1/livechat/visitor/" + token
+      url: "http://localhost:3000/api/v1/livechat/visitor/" + token
     }, function (err, req, body) {
       if (err) reject(err);
       else {
