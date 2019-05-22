@@ -7,7 +7,7 @@ var findUser = (username) => {
         request.get({
             url : "http://localhost:8118/api/v1/users/"+username,
             headers: {
-                "accesstoken": "1414806da5739e54c50f04a17ae9d67c7cd29ad7"
+                "accesstoken": "22fd06ffe7f8052d1e8e7eee52e1cfb6eb7b0dce"
             }
         }, function (err, req, body) {
             if(err) reject(err);
