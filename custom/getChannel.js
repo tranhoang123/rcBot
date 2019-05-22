@@ -9,7 +9,7 @@ var getChannels = (data) => {
                         'X-Auth-Token':data.auth,
                         'X-User-Id': data.userId 
                 },
-            url: 'http://localhost:3001/api/v1/channels.list',
+            url: 'http://localhost:3000/api/v1/channels.list',
             method: 'GET'
         }, function(error, response, body) {
             if (error) reject(error);
