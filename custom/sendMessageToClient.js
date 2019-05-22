@@ -4,7 +4,7 @@ var sendMessage = (message) => {
     let respond = "Answer for the question: \'" + message.question + " \': " + message.answer;
     auth().then(data => {
         request.post({
-                url: 'http://localhost:3001/api/v1/chat.postMessage',
+                url: 'http://localhost:3000/api/v1/chat.postMessage',
                 form: { 'channel': message.roomID, 'text': respond },
                 headers: {
                     'X-Auth-Token': data.auth,
