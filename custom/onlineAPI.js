@@ -10,7 +10,7 @@ var getOnline = (data) => {
                 query: {_id: data.channelSupporter}
             })
                 request({
-                url: 'http://localhost:3001/api/v1/channels.online?' + query,
+                url: 'http://localhost:3000/api/v1/channels.online?' + query,
                 headers: {
                     'X-Auth-Token': data.auth,
                     'X-User-Id': data.userId,
