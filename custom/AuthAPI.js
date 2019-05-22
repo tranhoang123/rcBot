@@ -4,7 +4,7 @@ var getAuth = () => {
     return new Promise(function(resolve, reject) {
         request.post({
             headers: { 'content-type': 'application/json' },
-            url: 'http://localhost:3001/api/v1/login',
+            url: 'http://localhost:3000/api/v1/login',
             form: {
                 username: process.env.ROCKETCHAT_USER,
                 password: process.env.ROCKETCHAT_PASSWORD
