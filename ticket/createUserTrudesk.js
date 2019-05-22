@@ -21,9 +21,9 @@ var createUser = (token, email) => {
                 aPassConfirm: "123456",
                 aFullname: username,
                 aEmail: email,
-                aGrps: ['5ce2f0f2cb196177beb78c91'],
+                aGrps: ['5ce559eae61aa51268be1a2d'],
                 aTitle: 'guest offline',
-                aRole: '5ce2f01926d61c75b6bbe7f3'
+                aRole: '5ce5552f5521f61204bc1f58'
             },
             json: true
         }, (err, req, body) => {
