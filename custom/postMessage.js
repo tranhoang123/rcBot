@@ -15,7 +15,7 @@ var send = (data) => {
     let botData = data.data;
     let respond = "@ticket" + message.ticket + " Guest question: " + message.question;
     req.post({
-            url: 'http://localhost:3001/api/v1/chat.postMessage',
+            url: 'http://localhost:3000/api/v1/chat.postMessage',
             form: { 'channel': chooseAngent._id, 'text': respond },
             headers: {
                 'X-Auth-Token': botData.auth,
