@@ -1,5 +1,6 @@
 var request = require('request');
 var auth = require('./AuthAPI');
+require('dotenv').config();
 var getChannels = (data) => {
     return new Promise(function(resolve, reject) {
         request.get({
@@ -15,7 +16,7 @@ var getChannels = (data) => {
             body = JSON.parse(body);
             
             let supportChannel = body.channels.filter((e)=>{
-                
+                //console.log("process.env "+process.env.CHANNEL_SUPPORT_NAME+" typeof "+typeof(process.env.CHANNEL_SUPPORT_NAME))
                 return e.fname === "supporter"
             })
             
@@ -24,9 +25,5 @@ var getChannels = (data) => {
     })
 };
 
-//module.exports = getChannels
-// auth()
-// .then(data => getChannels(data))
-// .then(data => console.log(data))
-
 module.exports = getChannels
+

@@ -1,10 +1,13 @@
+// post a direct message to livechat bot
+
+
 var req = require('request');
 
 var send = (data) => {
 
     //console.log(data);
     let angent = data.angent;
-    //console.log(angent);
+    console.log("do dai angent"+angent.length);
     let message = data.message;
     // console.log(message);
     let chooseAngent = angent[Math.floor(Math.random() * angent.length)];
